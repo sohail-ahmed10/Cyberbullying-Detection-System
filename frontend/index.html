@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberbullying Detection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ Cyberbullying Detection System</h1>
+            <p>Applied Machine Learning Evaluation & Auditing Platform</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="totalCount">0</div>
+                <div class="stat-label">Total Analyzed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="threatCount">0</div>
+                <div class="stat-label">Threats Detected</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="safeCount">0</div>
+                <div class="stat-label">Safe Content</div>
+            </div>
+        </div>
+        
+        <div class="main-card">
+            <textarea id="inputText" placeholder="Enter text to analyze..."></textarea>
+            
+            <div class="button-group">
+                <button class="btn-primary" onclick="analyze()">🔍 Analyze Content</button>
+                <button class="btn-secondary" onclick="clearText()">🗑️ Clear</button>
+            </div>
+            
+            <div id="result" class="result"></div>
+        </div>
+        
+        <div class="footer">
+            <p>⚡ Real-time Detection | 🎯 Machine Learning Powered | 🔒 Privacy First</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
